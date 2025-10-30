@@ -15,6 +15,7 @@ This project showcases creative use of animations, a terminal-inspired backgroun
 
 ---
 
+<<<<<<< HEAD
 ## Preview
 
 ### Landing Page (Home)
@@ -27,6 +28,9 @@ This project showcases creative use of animations, a terminal-inspired backgroun
 ---
 
 ## 📁 Project Structure
+=======
+## Project Structure
+>>>>>>> 3487914dcc2c89751eb84c409b8b08865bfea644
 ```bash
 public/ # pngs, jpgs, svgs., etc.
 ├── assets/ # pdfs (e.g. CV, Resume)
@@ -53,8 +57,11 @@ src/ # Source Code
 └── styles/ 
    └── global.css # Tailwind base styles and custom layers
 ```
+<<<<<<< HEAD
 
 ---
+=======
+>>>>>>> 3487914dcc2c89751eb84c409b8b08865bfea644
 
 ## Setup & Installation
 
