@@ -47,18 +47,25 @@ src/ # Source Code
 
 Clone this repository and install dependencies:
 
-# Clone the repo
+### Clone the repo
+```
 git clone https://github.com/yourusername/your-repo-name.git
+```
 
-# Go to project folder
+### Go to project folder
+```
 cd your-repo-name
+```
 
-# Install dependencies
+### Install dependencies
+```
 npm install
+```
 
-# Run development server
+### Run development server
+```
 npm run dev
-
+```
 
 Then open your browser at http://localhost:4321/
 
