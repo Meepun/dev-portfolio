@@ -103,7 +103,7 @@ export default function AboutMe() {
         <img
           src="/public/profile.jpg"
           alt="RJ Dollesin"
-          className="relative w-56 h-56 md:w-140 md:h-140 rounded-full object-cover shadow-lg border-2 border-yellow-400 z-10"
+          className="relative w-140 h-140 md:w-140 md:h-140 rounded-full object-cover shadow-lg border-2 border-yellow-400 z-10"
         />
       </div>
 
