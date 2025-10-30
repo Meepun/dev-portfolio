@@ -2,9 +2,11 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function AboutMe() {
+  // useState Logic for Button(Tab) switching
   const [activeTab, setActiveTab] = useState("bio");
   const [hoveredHobby, setHoveredHobby] = useState(null);
-
+  
+  // Constant for containing favorites for each hobby
   const favorites = {
     "🎮 Gaming": ["Wuthering Waves", "Final Fantasy VII: Remake", "Terraria", "Valorant"],
     "🎵 Music": ["natori", "ADO", "Le sserafim", "Eve", "Cup of Joe"],
@@ -36,24 +38,27 @@ export default function AboutMe() {
         </p>
       </div>
     ),
-
+    // Hobbies
     hobbies: (
       <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto rounded-full border-2 border-yellow-400 flex items-center justify-center">
         <p className="text-2xl text-yellow-300 italic font-semibold select-none">Hobbies</p>
+        {/* Positioning of Hobbies (Relative to Circular Container) */}
         {[
-          { text: "🎮 Gaming", top: "5%", left: "35%" },
+          { text: "🎮 Gaming", top: "5%", left: "35%" }, 
           { text: "🎵 Music", top: "30%", left: "10%" },
           { text: "🎞️ Video Editing", top: "62%", left: "5%" },
           { text: "💻 Hardware", top: "88%", left: "35%" },
           { text: "🎨 Graphic Design", top: "62%", left: "55%" },
           { text: "🌸 Anime & Manga", top: "30%", left: "55%" },
+
+          {/* Floating Box Logic */}
         ].map((hobby, i) => (
           <div
             key={i}
             style={{ top: hobby.top, left: hobby.left }}
             className="absolute group"
             onMouseEnter={() => setHoveredHobby(hobby.text)}
-            onMouseLeave={() => setHoveredHobby(null)}
+            onMouseLeave={() => setHoveredHobby(null)} 
           >
             <div
               className={`bg-gray-800 px-3 py-1 rounded-md shadow-md text-sm transition-all duration-300 transform
