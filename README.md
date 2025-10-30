@@ -148,7 +148,7 @@ By deploying the website to Netlify, it offers seamless web interaction, fully f
 ---
 
 ## 🧾 License
-This project is open-source under the MIT License.
+This project is open-source under the **[MIT License](https://github.com/Meepun/dev-portfolio?tab=MIT-1-ov-file#readme)**.
 
 ---
 
