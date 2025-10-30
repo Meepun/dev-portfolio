@@ -15,22 +15,38 @@ This project showcases creative use of animations, a terminal-inspired backgroun
 
 ---
 
-<<<<<<< HEAD
 ## Preview
 
 ### Landing Page (Home)
 ![Home.png](/public/screenshots/home.png)
+The Landing page of the website.
+
+### Profile Page
+![Profile.png](/public/screenshots/profile.png)
+Profile display which showcases developer's bio, hobbies, and skills; all in one page, accessible via buttons.
+
 ### Projects Page
-![Projects.png](/public/screenshots/home.png)
+![Projects.png](/public/screenshots/projects.png)
+A clear cut showcase of past projects accomplished by the developer.
+
+### Certifications Page
+![Certifications.png](/public/screenshots/certifications.png)
+Provides a clean display of certifications attained by the developer.
+
 ### CV Page
-![CV.png](/public/screenshots/home.png)
+![CV.png](/public/screenshots/cv.png)
+In this page, users can download the developer's CV and Resume (.pdf) in order to access it.
+
+### Contact Page
+![Contact.png](/public/screenshots/contact.png)
+Displays necessary contact information of the developer
+
+## 🚀 Live Demo
+🔗 **[View the Live Site](https://orfevredev.netlify.app)**
 
 ---
 
 ## 📁 Project Structure
-=======
-## Project Structure
->>>>>>> 3487914dcc2c89751eb84c409b8b08865bfea644
 ```bash
 public/ # pngs, jpgs, svgs., etc.
 ├── assets/ # pdfs (e.g. CV, Resume)
@@ -57,11 +73,8 @@ src/ # Source Code
 └── styles/ 
    └── global.css # Tailwind base styles and custom layers
 ```
-<<<<<<< HEAD
 
 ---
-=======
->>>>>>> 3487914dcc2c89751eb84c409b8b08865bfea644
 
 ## Setup & Installation
 
@@ -102,22 +115,16 @@ Orfevressu: ~/ display projects.jsx
 ```
 
 ### AboutMe.jsx
-Profile display which showcases developer's bio, hobbies, and skills; all in one page, accessible via buttons.
 
 ### Certifications.jsx
-Provides a clean display of certifications attained by the developer.
 
 ### Contact.jsx
-Displays necessary contact information of the developer
 
 ### CV.jsx
-In this page, users can download the developer's CV and Resume (.pdf) in order to access it.
 
 ### Home.jsx
-The Landing page of the website.
 
 ### Projects.jsx
-A clear cut showcase of past projects accomplished by the developer.
 
 ---
 
