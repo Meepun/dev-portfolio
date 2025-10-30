@@ -20,7 +20,7 @@ export default function TerminalBackground({ page }) {
   }, [displayedLines]);
 
   return (
-    <div id="terminal-output" className="absolute inset-0 bg-black text-green-400 font-mono text-sm p-4 overflow-y-auto opacity-25 select-none pointer-events-none">
+    <div id="terminal-output" className="absolute inset-0 bg-black text-green-400 font-mono text-sm p-4 overflow-hidden opacity-25 select-none pointer-events-none">
       {displayedLines.map((line, i) => (
         <div key={i} className="animate-fadeIn whitespace-pre">
           {`> ${line}`}

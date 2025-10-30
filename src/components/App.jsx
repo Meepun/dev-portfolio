@@ -9,28 +9,46 @@ import Contact from './screens/Contact.jsx';
 import Certifications from './screens/Certifications.jsx';
 import TerminalBackground from './TerminalBackground.jsx';
 
-//UseState Page Rendering
 export default function App() {
   const [page, setPage] = useState('home');
 
   const renderPage = () => {
     switch (page) {
-      case 'home': return <Home />;
-      case 'about': return <AboutMe />;
-      case 'cv': return <CV />;
-      case 'projects': return <Projects />;
-      case 'contact': return <Contact />;
-      case 'certifications' : return <Certifications />;
-      default: return <Home />;
+      case 'home':
+        return <Home />;
+      case 'about':
+        return <AboutMe />;
+      case 'cv':
+        return <CV />;
+      case 'projects':
+        return <Projects />;
+      case 'contact':
+        return <Contact />;
+      case 'certifications':
+        return <Certifications />;
+      default:
+        return <Home />;
     }
   };
 
-  return (
-    <div className="relative flex flex-col h-screen bg-gray-900 text-white overflow-hidden">
-      <TerminalBackground page={page} />
-        <Navbar page={page} setPage={setPage} />
+  // Scrollable Pages Logic 
+  const scrollablePages = ['projects', 'cv', 'certifications'];
+  const isScrollable = scrollablePages.includes(page);
 
-      <main className="flex-1 flex items-center justify-center overflow-hidden">
+  return (
+    <div
+      className={`relative flex flex-col h-screen bg-gray-900 text-white ${
+        isScrollable ? 'overflow-y-auto' : 'overflow-hidden'
+      }`}
+    >
+      <TerminalBackground page={page} />
+      <Navbar page={page} setPage={setPage} />
+
+      <main
+        className={`flex-1 flex items-center justify-center ${
+          isScrollable ? 'overflow-y-auto' : 'overflow-hidden'
+        }`}
+      >
         {renderPage()}
       </main>
 
