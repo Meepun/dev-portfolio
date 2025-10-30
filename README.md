@@ -16,6 +16,7 @@ This project showcases creative use of animations, a terminal-inspired backgroun
 ---
 
 ## Project Structure
+```bash
 public/ # pngs, jpgs, svgs., etc.
 ├── assets/ # pdfs (e.g. CV, Resume)
 └── projects/ # Assets for projects page
@@ -40,6 +41,7 @@ src/ # Source Code
 │
 └── styles/ 
    └── global.css # Tailwind base styles and custom layers
+```
 
 ## Setup & Installation
 
