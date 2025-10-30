@@ -106,7 +106,7 @@ Then open your browser at http://localhost:4321/
 
 ## 🧩 Key Components
 
-### 🖥️ `TerminalBackground.jsx`
+### `TerminalBackground.jsx`
 Creates a **fake terminal simulation** that reacts to navigation changes.  
 Each page triggers lines like:
 ```
@@ -130,15 +130,15 @@ Orfevressu: ~/ display projects.jsx
 
 ## 🎨 Styling Highlights
 
-Tailwind CSS utility classes for rapid layout control
+- Tailwind CSS utility classes for rapid layout control
 
-Glassmorphism used across sections for consistency
+- Glassmorphism used across sections for consistency
 
-Drop shadows and glows accent key text (titles, buttons)
+- Drop shadows and glows accent key text (titles, buttons)
 
-Framer Motion for scroll-triggered fades, slides, and loops
+- Framer Motion for scroll-triggered fades, slides, and loops
 
-Consistent yellow-white color palette for contrast
+- Consistent yellow-white color palette for contrast
 
 ---
 
