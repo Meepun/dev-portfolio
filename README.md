@@ -1,46 +1,62 @@
-# Astro Starter Kit: Basics
+# 🌐 Orfevressu – Developer Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+A visually immersive and interactive **developer portfolio** built with **Astro**, **React**, **Tailwind CSS**, and **Framer Motion**.  
+This project showcases creative use of animations, a terminal-inspired background, and clean UI transitions to reflect both technical skill and aesthetic precision.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## Tech Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Astro** – Static site generator for fast, lightweight builds  
+- **React** – Dynamic interactivity for reusable UI components  
+- **Tailwind CSS** – Utility-first styling for rapid design iteration  
+- **Framer Motion** – Smooth animations and page transitions  
+- **Lucide Icons** – Modern iconography for a minimalist interface  
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Project Structure
+public/ # pngs, jpgs, svgs., etc.
+├── assets/ # pdfs (e.g. CV, Resume)
+└── projects/ # Assets for projects page
 
-## 🧞 Commands
+src/ # Source Code
+├── components/
+│ ├── App.jsx # Landing Page
+│ ├── TerminalBackground.jsx # Simulated terminal commands background
+│ ├── layouts/
+│ ├── Navbar.jsx
+│ ├── Footer.jsx 
+│ └── screens/ # Different page views
+│    ├── AboutMe.jsx
+│    ├── Certifications.jsx
+│    ├── Contact.jsx
+│    ├── CV.jsx
+│    ├── Home.jsx
+│    └── Projects.jsx
+│
+├── pages/
+│ ├── index.astro # Loader for the SPA
+│
+└── styles/ 
+   └── global.css # Tailwind base styles and custom layers
 
-All commands are run from the root of the project, from a terminal:
+## Setup & Installation
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Clone this repository and install dependencies:
 
-## 👀 Want to learn more?
+# Clone the repo
+git clone https://github.com/yourusername/your-repo-name.git
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+# Go to project folder
+cd your-repo-name
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+
+Then open your browser at http://localhost:4321/
+
