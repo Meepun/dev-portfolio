@@ -5,7 +5,7 @@ html {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/*typing animation for terminal background*/ 
+/* Typing animation for terminal background */ 
 @keyframes blink {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
@@ -48,6 +48,21 @@ html {
   }
 }
 
+
 .animate-rotate-slow {
   animation: rotate-slow 15s linear infinite;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; 
+}
+
+html {
+  scrollbar-width: none; 
+}
+
+body {
+  -ms-overflow-style: none; 
 }

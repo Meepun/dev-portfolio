@@ -57,7 +57,7 @@ Designed to showcase web development, game dev, and creative projects in an inte
 
   return (
     <section
-      className="p-8 h-screen overflow-y-scroll text-white scrollbar-thin scrollbar-thumb-yellow-500 scrollbar-track-transparent"
+      className="p-8 h-screen text-white scrollbar-thin scrollbar-thumb-yellow-500 scrollbar-track-transparent"
       style={{ scrollbarGutter: "stable", scrollBehavior: "smooth" }}
     >
       <h1 className="text-4xl text-center font-bold mt-10 mb-10">Projects</h1>

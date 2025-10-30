@@ -1,52 +1,58 @@
-import { useState } from 'react';
-import Footer from './layout/Footer.jsx';
-import Navbar from './layout/Navbar.jsx';
-import Home from './screens/Home.jsx';
-import AboutMe from './screens/AboutMe.jsx';
-import CV from './screens/CV.jsx';
-import Projects from './screens/Projects.jsx';
-import Contact from './screens/Contact.jsx';
-import Certifications from './screens/Certifications.jsx';
-import TerminalBackground from './TerminalBackground.jsx';
+import { useState, useEffect, useRef } from "react";
+import Footer from "./layout/Footer.jsx";
+import Navbar from "./layout/Navbar.jsx";
+import Home from "./screens/Home.jsx";
+import AboutMe from "./screens/AboutMe.jsx";
+import CV from "./screens/CV.jsx";
+import Projects from "./screens/Projects.jsx";
+import Contact from "./screens/Contact.jsx";
+import Certifications from "./screens/Certifications.jsx";
+import TerminalBackground from "./TerminalBackground.jsx";
 
 export default function App() {
-  const [page, setPage] = useState('home');
+  const [page, setPage] = useState("home");
+  const mainRef = useRef(null);
 
   const renderPage = () => {
     switch (page) {
-      case 'home':
+      case "home":
         return <Home />;
-      case 'about':
+      case "about":
         return <AboutMe />;
-      case 'cv':
+      case "cv":
         return <CV />;
-      case 'projects':
+      case "projects":
         return <Projects />;
-      case 'contact':
+      case "contact":
         return <Contact />;
-      case 'certifications':
+      case "certifications":
         return <Certifications />;
       default:
         return <Home />;
     }
   };
 
-  // Scrollable Pages Logic 
-  const scrollablePages = ['projects', 'cv', 'certifications'];
+  // Scrollable Pages Logic
+  const scrollablePages = ["projects", "cv", "certifications"];
   const isScrollable = scrollablePages.includes(page);
 
+  useEffect(() => {
+    if (mainRef.current) {
+      mainRef.current.scrollTop = 0;
+    }
+  }, [page]);
+
   return (
-    <div
-      className={`relative flex flex-col h-screen bg-gray-900 text-white ${
-        isScrollable ? 'overflow-y-auto' : 'overflow-hidden'
-      }`}
-    >
+    <div className="relative flex flex-col h-screen bg-gray-900 text-white">
       <TerminalBackground page={page} />
       <Navbar page={page} setPage={setPage} />
 
       <main
-        className={`flex-1 flex items-center justify-center ${
-          isScrollable ? 'overflow-y-auto' : 'overflow-hidden'
+        ref={mainRef}
+        className={`flex-1 flex justify-center transition-all duration-300 ${
+          isScrollable
+            ? "overflow-y-auto items-start custom-scrollbar"
+            : "overflow-hidden items-center"
         }`}
       >
         {renderPage()}
