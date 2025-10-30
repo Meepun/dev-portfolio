@@ -13,6 +13,7 @@ export default function App() {
   const [page, setPage] = useState("home");
   const mainRef = useRef(null);
 
+  // useState Logic for Page Rendering
   const renderPage = () => {
     switch (page) {
       case "home":
@@ -33,7 +34,7 @@ export default function App() {
   };
 
   // Scrollable Pages Logic
-  const scrollablePages = ["projects", "cv", "certifications"];
+  const scrollablePages = ["projects", "certifications"];
   const isScrollable = scrollablePages.includes(page);
 
   useEffect(() => {
@@ -42,6 +43,7 @@ export default function App() {
     }
   }, [page]);
 
+  // Modular Page Rendering
   return (
     <div className="relative flex flex-col h-screen bg-gray-900 text-white">
       <TerminalBackground page={page} />

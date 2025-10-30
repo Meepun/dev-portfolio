@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function Projects() {
+  // Constant for containing each project information
   const projects = [
     {
       title: "IConsult",
@@ -41,7 +42,7 @@ It is a project for the Gender and Development Office so that the staff that wou
     {
       title: "Kakampster",
       description: `
-A mobile application developed in a team of 14 for AppCon 2025 where the app qualified for the Top 100. I served as the team's Lead Designer for this project and the one to conceptualize the idea of a Multi-purpose Disaster Response Application. The application contains a built-in forum, an environmental conditions status display which updates in realtime, a live map of recent disasters in the nearby area (flood, landslide, fire outbreak, car collision, etc.) in order to spread awareness in a streamlined process.
+A mobile application developed in a team of 14 for AppCon 2024 where the app qualified for the Top 100. I served as the team's Lead Designer for this project and the one to conceptualize the idea of a Multi-purpose Disaster Response Application. The application contains a built-in forum, an environmental conditions status display which updates in realtime, a live map of recent disasters in the nearby area (flood, landslide, fire outbreak, car collision, etc.) in order to spread awareness in a streamlined process.
 
 It also contains other useful features such as a SOS button for emergencies which reaches out immediately to emergency response teams in the nearby areas. The core function of the application is for users to be able to apply for volunteering and be a "Kakampster", an ally in times of disaster.`,
       image: "/projects/kakampster.png",
@@ -62,6 +63,7 @@ Designed to showcase web development, game dev, and creative projects in an inte
     >
       <h1 className="text-4xl text-center font-bold mt-10 mb-10">Projects</h1>
 
+      {/* Slide in Animation for Project Containers */}
       <div className="flex flex-col gap-8">
         {projects.map((project, index) => (
           <motion.div
@@ -71,13 +73,15 @@ Designed to showcase web development, game dev, and creative projects in an inte
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-          >
+          > 
+          {/* Image Insert */}
             <img
               src={project.image}
               alt={project.title}
               className="w-full md:w-64 h-40 object-cover rounded-lg border border-yellow-400 shadow-md"
             />
 
+            {/* Project Container Structure */}
             <div className="text-left max-w-2xl">
               <h3 className="text-2xl font-bold text-yellow-400 mb-3">
                 {project.title}
