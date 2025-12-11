@@ -82,12 +82,12 @@ Clone this repository and install dependencies:
 
 ### Clone the repo
 ```
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/Meepun/dev-portfolio.git
 ```
 
 ### Go to project folder
 ```
-cd your-repo-name
+cd dev-portofolio
 ```
 
 ### Install dependencies
