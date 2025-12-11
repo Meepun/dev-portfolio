@@ -51,7 +51,6 @@ export default function AboutMe() {
           { text: "🎨 Graphic Design", top: "62%", left: "55%" },
           { text: "🌸 Anime & Manga", top: "30%", left: "55%" },
 
-          {/* Floating Box Logic */}
         ].map((hobby, i) => (
           <div
             key={i}
